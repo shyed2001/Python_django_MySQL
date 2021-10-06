@@ -2,6 +2,11 @@
 Python_django_MySQL
 install postman for api testing
 PS :\GitHub\Python_django_MySQL> history
+pip install virtualenv
+
+virtualenv env
+
+.\env\Script\activate.ps1
 
   Id     Duration CommandLine
   --     -------- -----------
@@ -9,9 +14,8 @@ PS :\GitHub\Python_django_MySQL> history
 
    3     pip install djangorestframework
 
-   4     pip install djang-cors-headers
+   4     pip install django-cors-headers
 
-   5     pip install django-cors-headers
 
 
 roblems running django-admin¶
