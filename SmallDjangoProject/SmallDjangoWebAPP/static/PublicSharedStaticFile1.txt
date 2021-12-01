@@ -1,0 +1,13 @@
+This is aPublic Openly Shared Static file
+
+Used Commands
+
+>django-admin.exe startproject [myprojectName]
+
+>python manage.py runserver
+
+>python manage.py startapp [myappName]
+
+
+
+
