@@ -14,7 +14,9 @@ def about(request):
   return HttpResponse("This is About Page")
 
 def services(request):
-  return HttpResponse("This is About services page")
+  return HttpResponse('''This is About services page \n
+                      This is About services page \n
+                      This is About services page ''')
 
 def contact(request):
   return HttpResponse("This is About contact page")
