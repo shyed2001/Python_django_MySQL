@@ -14,9 +14,13 @@ def about(request):
   return HttpResponse("This is About Page")
 
 def services(request):
-  return HttpResponse('''This is About services page \n
+  return render(request, 'services.html')
+  
+  
+  """ return HttpResponse('''This is About services page \n
                       This is About services page \n
-                      This is About services page ''')
+                      This is About services page ''') """
 
 def contact(request):
-  return HttpResponse("This is About contact page")
+  return render(request, 'contacts.html')
+  # return HttpResponse("This is About contact page")
