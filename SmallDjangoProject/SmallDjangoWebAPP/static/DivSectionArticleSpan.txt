@@ -1,0 +1,148 @@
+Sectioning Content in HTML5 - div or section or article?
+Save Article for Offline Sep 29, 2015 html
+HTML5 was a major stepping stone for the concept of semantic code. It really championed the idea that how your document is structured and what tags you use should convey meaning to user agents.
+
+Among others, the <section> and <article> elements were introduced as a way to section your content in a more meaningful way than a regular <div>. But when should we use these new elements, and when is a regular <div> preferrable?
+
+Overview of The Elements
+div
+The <div> element is the most general purpose element. It has no special meaning. It’s purpose is to group content that is not semantically related. Because it is essentially meaningless to screen readers, it should be sparingly used.
+
+Authors are strongly encouraged to view the div element as an element of last resort, for when no other element is suitable.
+
+W3C Recommendation
+
+The <div> element, therefore, is mainly used to group content for targeting with CSS. For example, as a styling container for other elements.
+
+<div class="modal-container">
+  <section class="modal">
+    <h1>Modal Title</h1>
+    <p>Text goes here</p>
+  </section>
+</div>
+section
+The <section> element is slightly more specific that a <div>. It is applied to a generic section of content that can be grouped together in a semantically meaningful way.
+
+A general rule of thumb is that the section element is appropriate only if the element’s contents would be listed explicitly in the document’s outline.
+
+W3C Recommendation
+
+Because the contents of a <section> are meaningful when grouped together, they should have a “theme”. A <section>’s “theme” should be defined by including a heading element within the element, often immediately after the opening tag.
+
+<section class="newsletter">
+  <h1>Subscribe to the Newsletter</h1>
+  <form> <!-- ... --> </form>
+</section>
+article
+The <article> element is even more specific than a <section>. It is also applied to a section of content that is semantically related, and should also have a heading. However, this section of content should additionally be "self-contained". This means that the contents of an <article> should be able to be isolated from the rest of the page and still be meaningful.
+
+One common purpose for an <article> is in marking content for syndication. For example, marking a blog post.
+
+<article class="post">
+  <h1>Article Title</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+  <p>Quae similitudo in genere etiam humano apparet. Est, ut dicis, inquam...</p>
+</article>
+div or section or article?
+So which should you use and when?
+
+If the content within the element is not semantically related, then use a <div>. If the semantically related content is also able to be self-contained, then use an <article>. Otherwise, use a <section>.
+
+Flowchart - Div or Section or Article
+
+Combining the Elements
+Where things can get a bit complicated is when we try to combine the different elements together.
+
+Articles within an Article
+We can nest <article> elements within each other. Although still self-contained, inner <article>s are assumed to be related to the contents of the outer <article>.
+
+For example, if there is a long excerpt within a a blog post that is written by another person, it could be contained in its own <article>.
+
+<article>
+  <h1>Article Title</h1>
+  <p class="author">John Smith</p>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+  <article>
+    <h2>Another Article</h2>
+    <p class="author">Jane Doe</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </article>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</article>
+Articles within a Section
+We can also have multiple <article> elements within a <section> element. A good example of this is a blog homepage showing the latest posts. The container for all the latest posts would be a <section>, whereas each individual post excerpt could be an <article>.
+
+<section>
+  <h1>Latest Blog Posts</h1>
+  <article>
+    <h2>Blog Post Title</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+  </article>
+  <article>
+    <h2>Blog Post Title</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+  </article>
+</section>
+Sections within an Article
+Each individual <article> may also have <section> elements within it. For example, this particular post could be written like this -
+
+<article>
+  <h1>Sectioning Content in HTML5 - div or section or article?</h1>
+
+  <section>
+    <h2>Overview of the Elements</h2>
+    <section>
+      <h3>div</h3>
+      <p>The div element is the most general purpose element.</p>
+    </section>
+    <section>
+      <h3>section</h3>
+      <p>The section element is slightly more specific that a div</p>
+    </section>
+    <section>
+      <h3>article</h3>
+      <p>The article element is even more specific than a section</p>
+    </section>
+  </section>
+
+  <section>
+    <h2>div or section or article?</h2>
+    <!-- ... -->
+  </section>
+
+  <section>
+    <h2>Combining the Elements</h2>
+    <!-- ... -->
+  </section>
+
+</article>
+
+HTML <span> Tag
+
+  Example
+A <span> element which is used to color a part of a text:
+
+<p>My mother has <span style="color:blue">blue</span> eyes.</p>
+
+
+The <span> tag is an inline container used to mark up a part of a text, or a part of a document.
+
+  The <span> tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute.
+  
+  The <span> tag is much like the <div> element, but <div> is a block-level element and <span> is an inline element.
+  
+    There are two display values: block and inline
+    A block-level element always starts on a new line and takes up the full width available
+    An inline element does not start on a new line and it only takes up as much width as necessary
+    The <div> element is a block-level and is often used as a container for other HTML elements
+    The <span> element is an inline container used to mark up a part of a text, or a part of a document
+    HTML Tags
+    Tag	Description
+    <div>	Defines a section in a document (block-level)
+    <span>	Defines a section in a document (inline)
+
+      
