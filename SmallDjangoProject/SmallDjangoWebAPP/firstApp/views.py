@@ -45,6 +45,11 @@ def locations(request):
 
 
 def links(request):
+  context={
+    "WebmasterName":"Name- Shyed Shahriar Housaini",
+    "WebmasterEmail":"E-mail- shyed2001@yahoo.com",
+    "Website":"Website- https://www.digialbd.org"
+  } 
   return render(request, 'links.html', context) 
 
 
@@ -63,8 +68,7 @@ def disclaimer(request):
     "WebmasterEmail":"E-mail- shyed2001@yahoo.com",
     "Website":"Website- https://www.digialbd.org"
   }  
-  
-  return render(request, 'disclaimer.html', context),
+  return render(request, 'disclaimer.html', context)
  
 def privacypolicy(request):
   context={
@@ -72,5 +76,4 @@ def privacypolicy(request):
     "WebmasterEmail":"E-mail- shyed2001@yahoo.com",
     "Website":"Website- https://www.digialbd.org"
   }
-  
   return render(request, 'privacypolicy.html', context)
