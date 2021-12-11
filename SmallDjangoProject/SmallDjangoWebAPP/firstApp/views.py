@@ -43,6 +43,7 @@ def products(request):
 def locations(request):
   return render(request, 'locations.html', context) 
 
+
 def links(request):
   return render(request, 'links.html', context) 
 
@@ -55,3 +56,21 @@ def contacts(request):
   }
   return render(request, 'contacts.html', context)
   # return HttpResponse("This is About contact page")
+  
+def disclaimer(request):
+  context={
+    "WebmasterName":"Name- Shyed Shahriar Housaini",
+    "WebmasterEmail":"E-mail- shyed2001@yahoo.com",
+    "Website":"Website- https://www.digialbd.org"
+  }  
+  
+  return render(request, 'disclaimer.html', context),
+ 
+def privacypolicy(request):
+  context={
+    "WebmasterName":"Name- Shyed Shahriar Housaini",
+    "WebmasterEmail":"E-mail- shyed2001@yahoo.com",
+    "Website":"Website- https://www.digialbd.org"
+  }
+  
+  return render(request, 'privacypolicy.html', context)

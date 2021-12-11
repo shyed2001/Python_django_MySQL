@@ -14,7 +14,9 @@ urlpatterns = [
     path('locations', views.locations, name='locations'),
     path('links', views.links, name='links'),
     path('contacts', views.contacts, name='contacts'),   
-   
+    path('disclaimer', views.disclaimer, name='disclaimer'),   
+    path('privacypolicy', views.privacypolicy, name='privacypolicy'),
+       
    ## For compatibility with general html code 
     path('index.html', views.index, name='Home' ),
     path('about.html', views.about, name='about'),
@@ -26,5 +28,7 @@ urlpatterns = [
     path('products.html', views.products, name='products'),
     path('locations.html', views.locations, name='locations'),
     path('links.html', views.links, name='links'),
-    path('contacts.html', views.contacts, name='contacts')
+    path('contacts.html', views.contacts, name='contacts'),
+    path('disclaimer.html', views.disclaimer, name='disclaimer'),
+    path('privacypolicy.html', views.privacypolicy, name='privacypolicy')
 ]
