@@ -1,0 +1,55 @@
+Notes:
+
+Project Ideas
+
+Free online tests - EQ, IQ, GK, PT
+
+Multiple choice quiz type
+Shared IQ EQ EI SI GkT  
+Links https://docs.google.com/document/d/1FD1fKS0x_c4EBBgMXrsqtf_EfWqB8hXWRDEwrQhnlSw/edit?usp=sharing
+
+
+
+Similar to https://www.ratemyprofessors.com/
+Rating Platform for Teachers, Lecturers, Professors, 
+Doctors, Hotels, Restaurant and relevant institutes and other organizations etc.
+Add more categories later.  
+Rate Schools, Colleges, Universities, Polytechnics. 
+Database
+100 person data for each category  -- Links, 
+SignUp/Registration form
+User Input
+Ranking system
+Policies
+
+
+
+Meeting Space sharing/renting — (Similar to air bnb but office version)
+
+Medical service -- Medical Test report uploads and Evaluation.
+
+Ride sharing – Real ride sharing , trip sharing or vehicle pooling, ride sharing by route sharing or public transport/ bus stoppage calling and truck renting app
+
+Ranking system – Results from –
+Internal Search engine – keyword powered, Rejex, Pattern matching
+Vector database, Similarity matches, Neural Engine
+Those are combined
+
+Recommendation Engine - Similar visually or Text or pattern to recommend products are entries that are similar to their interest or search. 
+These are combined with Ranking system 
+Internal Search engine + Vector database
+
+
+
+Gamification / Serious Game —     Go , .NET
+Technology Site -- Asp.NET Core MVC 
+Desktop Client App - 
+
+
+PHP Laravel - E-commerce website
+
+
+Documentation [Doxygen]
+
+
+Templates – frontend and backend  related templates for all platform
