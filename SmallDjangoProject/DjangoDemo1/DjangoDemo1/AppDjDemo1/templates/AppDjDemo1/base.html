@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Django App Base Template</title>
+  {% comment %} <link rel="stylesheet" href="{% static 'css/styles.css' %}"> {% endcomment %}
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a>Home</a></li>
+        <li><a>About</a></li>
+        <li><a>Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    {% comment %} {% block content %} {% endcomment %}
+    <p>Base HTML template - Default content</p>
+    <!-- Content will be injected here -->
+    {% comment %} {% endblock %} {% endcomment %}
+  </main>
+  <footer>
+    <p>&copy; 2023 My Django App</p>
+  </footer>
+</body>
+</html>

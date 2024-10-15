@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "AppDjDemo1", 
+    'AppDjDemo1.apps.Appdjdemo1Config',  
+    #"AppDjDemo1", 
     # Add this line to include the app in the project
 ]
 
