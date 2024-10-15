@@ -1,0 +1,19 @@
+This is aPublic Openly Shared Static file
+
+Used Commands
+
+>django-admin.exe startproject [myprojectName]
+
+>python manage.py runserver
+
+>python manage.py startapp [myappName]
+
+>python manage.py makemigrations
+
+>python manage.py migrate
+
+> python manage.py createsuperuser
+
+# Changing the language mode of the file to "Django/HTML" will also prevent VSCode from autoformatting it.
+
+
