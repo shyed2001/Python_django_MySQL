@@ -1,55 +1,52 @@
-Notes:
+# Notes
 
-Project Ideas
+## Project Ideas
 
-Free online tests - EQ, IQ, GK, PT
+### 1. Free online tests - EQ, IQ, GK, PT
+- Multiple choice quiz type
+- Shared IQ, EQ, EI, SI, GkT
+- [Links](https://docs.google.com/document/d/1FD1fKS0x_c4EBBgMXrsqtf_EfWqB8hXWRDEwrQhnlSw/edit?usp=sharing)
 
-Multiple choice quiz type
-Shared IQ EQ EI SI GkT  
-Links https://docs.google.com/document/d/1FD1fKS0x_c4EBBgMXrsqtf_EfWqB8hXWRDEwrQhnlSw/edit?usp=sharing
+### 2. Rating Platform
+- Similar to [Rate My Professors](https://www.ratemyprofessors.com/)
+- Categories: Teachers, Lecturers, Professors, Doctors, Hotels, Restaurants, Schools, Colleges, Universities, Polytechnics, etc.
+- Features: User Input, Ranking system, Policies
+- Database: 100 person data for each category
+- SignUp/Registration form
 
+### 3. Meeting Space Sharing/Renting
+- Similar to Airbnb but for office spaces
 
+### 4. Medical Service
+- Medical Test report uploads and Evaluation
 
-Similar to https://www.ratemyprofessors.com/
-Rating Platform for Teachers, Lecturers, Professors, 
-Doctors, Hotels, Restaurant and relevant institutes and other organizations etc.
-Add more categories later.  
-Rate Schools, Colleges, Universities, Polytechnics. 
-Database
-100 person data for each category  -- Links, 
-SignUp/Registration form
-User Input
-Ranking system
-Policies
+### 5. Ride Sharing
+- Real ride sharing, trip sharing, vehicle pooling, ride sharing by route sharing, public transport/bus stoppage calling, truck renting app
 
+### 6. Ranking System
+- Results from: Internal Search engine (keyword powered, Regex, Pattern matching), Vector database, Similarity matches, Neural Engine
+- Combined with Recommendation Engine
 
+### 7. Recommendation Engine
+- Recommend products or entries similar to user interest or search
+- Combined with Ranking system
 
-Meeting Space sharing/renting — (Similar to air bnb but office version)
+### 8. Gamification/Serious Game
+- Technologies: Go, .NET
 
-Medical service -- Medical Test report uploads and Evaluation.
+### 9. Technology Site
+- Asp.NET Core MVC
 
-Ride sharing – Real ride sharing , trip sharing or vehicle pooling, ride sharing by route sharing or public transport/ bus stoppage calling and truck renting app
+### 10. Desktop Client App
 
-Ranking system – Results from –
-Internal Search engine – keyword powered, Rejex, Pattern matching
-Vector database, Similarity matches, Neural Engine
-Those are combined
+### 11. PHP Laravel
+- E-commerce website
 
-Recommendation Engine - Similar visually or Text or pattern to recommend products are entries that are similar to their interest or search. 
-These are combined with Ranking system 
-Internal Search engine + Vector database
+### 12. Documentation
+- Doxygen
 
-
-
-Gamification / Serious Game —     Go , .NET
-Technology Site -- Asp.NET Core MVC 
-Desktop Client App - 
-
-
-PHP Laravel - E-commerce website
-
-
-Documentation [Doxygen]
+### 13. Templates
+- Frontend and backend related templates for all platforms
 
 
-Templates – frontend and backend  related templates for all platform
+##Templates – frontend and backend  related templates for all platform

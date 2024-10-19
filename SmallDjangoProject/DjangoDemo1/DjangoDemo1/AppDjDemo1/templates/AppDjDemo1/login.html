@@ -1,0 +1,27 @@
+<!-- Genrate HTML boilarplate code for login page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django google Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="" method="post">
+        {% comment %} {% csrf_token %}
+        {{ form.as_p }} {% endcomment %}
+         {% load socialaccount %}
+        <h2> <button type="submit">Google Login</button> </h2>
+        <a href="{% provider_login_url 'google' %}?next=/"> Sigin with Google</a>
+
+        {% if user.is_authenticated %}
+{% comment %} <p> you are signed in as {{ user.username }} </p>
+ {% endcomment %}
+ <p> you are signed in as {{ user.email }} </p>
+ <a href="logout"> Logout </a>
+{% endif %}
+    </form>
+</body>
+</html>
