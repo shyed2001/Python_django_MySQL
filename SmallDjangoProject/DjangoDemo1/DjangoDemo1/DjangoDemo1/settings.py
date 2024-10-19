@@ -12,6 +12,25 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 
+# from curses.ascii import SI
+import sys
+if sys.platform != 'win32':
+    from curses.ascii import SI
+else:
+    import curses  # This works after installing `windows-curses` pip install windows-curses
+
+# curses module, which is a library primarily designed for Unix-based systems (like Linux). It doesn't come pre-installed on Windows.
+
+# requerder for google  signin django-allauth
+# pip install requests  # required for google  signin django-allauth
+# pip install PyJWT  # required for google  signin django-allauth
+# pip install cryptography # required for google  signin django-allauth
+# pip install django-allauth # required for google  signin django-allauth
+# pip install windows-curses # required for google  signin django-allauth
+
+
+
+    
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -27,6 +46,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+SITE_ID = 2 # Add this line to include the app in the project for OAuth from allauth app
 
 # Application definition
 
@@ -40,7 +60,64 @@ INSTALLED_APPS = [
     'AppDjDemo1.apps.Appdjdemo1Config',  
     #"AppDjDemo1", 
     # Add this line to include the app in the project
+    "django.contrib.sites", # required for django-allauth
+    "allauth", # pip install django-allauth
+    "allauth.account",
+    "allauth.socialaccount",
+    "allauth.socialaccount.providers.google", # required for google  signin django-allauth , this is the provider for google
+    # add more providers here
+    # "allauth.socialaccount.providers.facebook",
+    # "allauth.socialaccount.providers.twitter",
+    # "allauth.socialaccount.providers.github",
+    # "allauth.socialaccount.providers.linkedin",
+    # "allauth.socialaccount.providers.instagram",
+    # "allauth.socialaccount.providers.pinterest",
+    # "allauth.socialaccount.providers.reddit",
+    # "allauth.socialaccount.providers.slack",
+    # "allauth.socialaccount.providers.spotify",
+    # "allauth.socialaccount.providers.twitch",
+    # "allauth.socialaccount.providers.vimeo",
+    # "allauth.socialaccount.providers.yahoo",
+    # "allauth.socialaccount.providers.amazon",
+    # "allauth.socialaccount.providers.dropbox",
+    # "allauth.socialaccount.providers.disqus",
+    # "allauth.socialaccount.providers.foursquare",
+    # "allauth.socialaccount.providers.gitlab",
+    
+    
 ]
+
+
+
+SOCIALACCOUNT_PROVIDERS = {
+    'google': {
+        'SCOPE': {
+            'profile',
+                'email',
+        },
+        'AUTH_PARAMS': {"access_type": "online"},
+        
+        
+    }
+    
+    # other providers go here
+
+}
+
+AUTHENTICATION_BACKENDS = (
+    
+    # Needed to login by username in Django admin, regardless of `allauth`
+    
+    "django.contrib.auth.backends.ModelBackend",
+    "allauth.account.auth_backends.AuthenticationBackend"
+    
+)
+
+
+LOGIN_REDIRECT_URL = '/'
+
+LOGOUT_REDIRECT_URL = '/'
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -50,6 +127,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+     'allauth.account.middleware.AccountMiddleware', # required for djamgo-allauth
 ]
 
 ROOT_URLCONF = 'DjangoDemo1.urls'
@@ -118,7 +196,38 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = 'static/'
+
+# STATIC_URL = '/static/'
+# STATICFILES_DIRS = [BASE_DIR / "static",]
+
+# import os
+# from pathlib import Path
+
+# BASE_DIR = Path(__file__).resolve().parent.parent
+
+# # Add this setting
+# STATIC_URL = '/static/'
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'static'),
+# ]
+
+
+
+import os
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+# Add this setting for serving static files
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),  # This should point to the actual 'static' directory
+]
+
+# Add the STATIC_ROOT setting
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # This is for ' python manage.py collectstatic  ' command to collect all static files in one place
+
+
 
 
 
