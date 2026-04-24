@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "owner": "Shyed Shahriar",
+  "master_library": "F:\\GitHubDesktop\\GitHubCloneFiles\\AI_Tools_Plan_Master_Index_Lib",
+  "repos": [
+    {
+      "repo_id": "repo.ai-tools.master-index",
+      "repo_name": "AI_Tools_Plan_Master_Index_Lib",
+      "local_path": "F:\\GitHubDesktop\\GitHubCloneFiles\\AI_Tools_Plan_Master_Index_Lib",
+      "remote_url": "",
+      "primary_branch": "main",
+      "repo_type": "ai-tools",
+      "protection_level": "important",
+      "package_manager": "none",
+      "instruction_files": {
+        "AGENTS.md": true,
+        "CLAUDE.md": true,
+        "GEMINI.md": true,
+        "ANTIGRAVITY.md": true,
+        ".github/copilot-instructions.md": true
+      },
+      "mcp": {
+        "has_mcp_config": false,
+        "related_mcp_servers": []
+      },
+      "servers": {
+        "local": [],
+        "remote": []
+      },
+      "docs": {
+        "obsidian_links": [],
+        "ai_docs": []
+      },
+      "mempalace": {
+        "palace": "",
+        "wing": ""
+      },
+      "status": "active",
+      "last_indexed_at": "",
+      "last_verified_at": ""
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "mcp_servers": [
+    {
+      "mcp_id": "mcp.filesystem.local",
+      "display_name": "Filesystem MCP Local",
+      "transport": "stdio",
+      "scope": "local",
+      "allowed_clients": ["tool.claude-code", "tool.gemini-cli", "tool.codex"],
+      "resources": ["local files", "repo files", "docs"],
+      "tools": ["read_file", "list_directory", "search_files"],
+      "prompts": [],
+      "allowed_paths": ["F:\\GitHubDesktop\\GitHubCloneFiles"],
+      "blocked_paths": ["C:\\Users\\User\\.ssh", "C:\\Users\\User\\AppData", "F:\\Secrets"],
+      "risk_level": "high",
+      "status": "planned"
+    },
+    {
+      "mcp_id": "mcp.github.remote",
+      "display_name": "GitHub MCP",
+      "transport": "stdio_or_http",
+      "scope": "remote",
+      "allowed_clients": ["tool.claude-code", "tool.gemini-cli"],
+      "resources": ["repositories", "issues", "pull requests"],
+      "tools": ["search_repositories", "read_file", "create_issue", "create_pull_request"],
+      "prompts": [],
+      "risk_level": "high",
+      "status": "planned"
+    }
+  ]
+}

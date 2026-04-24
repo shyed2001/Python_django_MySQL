@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0.0",
+  "tools": [
+    {
+      "tool_id": "tool.codex",
+      "display_name": "OpenAI Codex",
+      "primary_instruction_file": "AGENTS.md",
+      "best_for": ["repo analysis", "coding patches", "tests", "safe implementation plans"],
+      "risk_level": "medium"
+    },
+    {
+      "tool_id": "tool.github-copilot",
+      "display_name": "GitHub Copilot",
+      "primary_instruction_file": ".github/copilot-instructions.md",
+      "best_for": ["IDE coding", "inline suggestions", "repo-aware chat"],
+      "risk_level": "medium"
+    },
+    {
+      "tool_id": "tool.claude-code",
+      "display_name": "Claude Code",
+      "primary_instruction_file": "CLAUDE.md",
+      "best_for": ["long coding sessions", "repo memory", "multi-file implementation"],
+      "risk_level": "high"
+    },
+    {
+      "tool_id": "tool.gemini-cli",
+      "display_name": "Gemini CLI",
+      "primary_instruction_file": "GEMINI.md",
+      "best_for": ["large-context repo analysis", "CLI agent tasks"],
+      "risk_level": "medium"
+    },
+    {
+      "tool_id": "tool.antigravity",
+      "display_name": "Antigravity",
+      "primary_instruction_file": "ANTIGRAVITY.md",
+      "best_for": ["IDE-agent workflow", "project navigation"],
+      "risk_level": "medium"
+    },
+    {
+      "tool_id": "tool.mempalace",
+      "display_name": "MemPalace",
+      "primary_instruction_file": "docs/mempalace.md",
+      "best_for": ["local semantic repo mining", "code memory", "changed-file recall"],
+      "risk_level": "low"
+    },
+    {
+      "tool_id": "tool.caveman",
+      "display_name": "Caveman",
+      "primary_instruction_file": "docs/caveman.md",
+      "best_for": ["local CLI agent workflow"],
+      "risk_level": "medium"
+    },
+    {
+      "tool_id": "tool.cavemem",
+      "display_name": "Cavemem",
+      "primary_instruction_file": "docs/cavemem.md",
+      "best_for": ["agent memory", "persistent local context"],
+      "risk_level": "medium"
+    }
+  ]
+}

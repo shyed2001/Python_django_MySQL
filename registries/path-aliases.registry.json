@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "aliases": [
+    {
+      "alias": "github-root",
+      "windows_path": "F:\\GitHubDesktop\\GitHubCloneFiles",
+      "description": "Main local GitHub Desktop clone root"
+    },
+    {
+      "alias": "ai-tools-master",
+      "windows_path": "F:\\GitHubDesktop\\GitHubCloneFiles\\AI_Tools_Plan_Master_Index_Lib",
+      "description": "Central AI tools master library"
+    }
+  ]
+}

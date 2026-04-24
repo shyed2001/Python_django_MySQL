@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0.0",
+  "rules": [
+    { "file": "pnpm-lock.yaml", "manager": "pnpm" },
+    { "file": "package-lock.json", "manager": "npm" },
+    { "file": "yarn.lock", "manager": "yarn" },
+    { "file": "uv.lock", "manager": "uv" },
+    { "file": "pyproject.toml", "manager": "python-project" },
+    { "file": "requirements.txt", "manager": "pip-compatible" }
+  ]
+}
