@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "2.1.0",
+  "updatedAt": "2026-04-25",
+  "generatedBy": {
+    "module": "gitautofleet.ai_governance",
+    "script": "scripts/generate_ai_governance_docs.py",
+    "cliCommand": "uv run python scripts/generate_ai_governance_docs.py --all",
+    "configPath": "F:\\GitHubDesktop\\GitHubCloneFiles\\GitAutoRepoFleet\\config\\GitAutoRepoFleet_Config.json",
+    "generatorRepoPath": "F:\\GitHubDesktop\\GitHubCloneFiles\\GitAutoRepoFleet"
+  },
+  "rootPolicy": {
+    "model": "centralized-global-with-local-overrides",
+    "canonicalRepo": {
+      "name": "AI_Tools_Plan_Master_Index_Lib",
+      "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\AI_Tools_Plan_Master_Index_Lib",
+      "branch": "main",
+      "role": "hub"
+    },
+    "fleetRoot": "F:\\GitHubDesktop\\GitHubCloneFiles",
+    "relationSource": "git-root-scan"
+  },
+  "repo": {
+    "name": "Python_django_MySQL",
+    "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Python_django_MySQL",
+    "role": "spoke",
+    "branch": "master"
+  },
+  "relations": {
+    "inheritsFrom": [
+      {
+        "repo": "AI_Tools_Plan_Master_Index_Lib",
+        "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\AI_Tools_Plan_Master_Index_Lib",
+        "mode": "reference",
+        "scope": "global-ai-governance"
+      }
+    ],
+    "fleetTopology": {
+      "scope": "full-fleet",
+      "discoveryMode": "scan-direct-child-git-repos",
+      "repoCount": 87,
+      "hubRepo": "AI_Tools_Plan_Master_Index_Lib",
+      "linkedRepos": [
+        ".NET-Backend-Developer-Roadmap",
+        "AbsolutePath__RelativePath",
+        "adorshogeenbangla_dotNET_web_app",
+        "AI_Tools_Plan_Master_Index_Lib",
+        "Al-Bidaya-wan-Nihaya",
+        "Algorithoms_and_Data_Structures",
+        "Android",
+        "androidHome",
+        "ArchLinux",
+        "AspNetCore-Developer-Roadmap",
+        "AssemblyCode_asm_Programs",
+        "Asset-Management-ERP-MBA",
+        "books-Python-C-CPP-HTML-CSS-Js-PHP-Rust-AssemblyLanguage-",
+        "Browser_Add_ons_Extensions_PlugIns",
+        "C-Learning_ignored_and_discontinued",
+        "C_Programming",
+        "caveman",
+        "cavemem",
+        "CPlusPlusCPP_Programming",
+        "CPP-Programming_AbdulBari",
+        "CPP_AbdulBari",
+        "CppBooks",
+        "CppCoreGuidelines",
+        "CS50GitPractice",
+        "CS50W-Project0-Google-Search",
+        "CyberSecurity_PenTesting_BugBounty",
+        "Dart-Flutter",
+        "Data_Mining_MCSE_642",
+        "DBMS_Database_Management_System_CSI_223_MCSE",
+        "digitalbd_org",
+        "Docker---Kubernetes",
+        "DomainsAndWebSiteHosting",
+        "DSA_C_and_CPP_Data_Structures_and_Algorithms",
+        "Electronic-Cheat-Sheet-and-Schematics-MegaCollection",
+        "Evolutionary_Algorithm_MCSE662",
+        "General-Study-Skills",
+        "GitAutoRepoFleet",
+        "Hands-On-WebAssembly-for-C-Programmers",
+        "Hard__Junction__Soft_Symbolic_SymLinks",
+        "Help-Files",
+        "HTML-and-html.txt-files",
+        "JavaScript",
+        "KLEHPT",
+        "Library_Management_Dot_Net",
+        "Markup_Languages",
+        "mempalace",
+        "MemPalace-dev",
+        "modern-js-cheatsheet",
+        "MongoDB",
+        "MSc_CSE",
+        "mSc_CSEOLD_FIlesOf",
+        "My-md-website-cv",
+        "MySQL_RDBMS",
+        "Networking_IT_Comm_IE_IP",
+        "Obsidian_Vault",
+        "Office-Works",
+        "Open_Source_Projects_Contributions",
+        "Operating_System_CSI_313",
+        "palaces-mempalace-mydev",
+        "Palaces-mempalace-official",
+        "PLC-VFD-SCADA",
+        "Project-Material",
+        "Python_django_MySQL",
+        "Python_Programming",
+        "Sadik-Education-Materials",
+        "Scratch-online-programming-and-game-making",
+        "Shared_businet",
+        "Shared_public_html",
+        "Shared_repo",
+        "Shehrine_Education_Material",
+        "shyed2001",
+        "shyed2001.github.io",
+        "Sirat_un_Nabi_by_Ibn_Hisham",
+        "SQLite",
+        "StructuredProgrammingCSI_121",
+        "system-design-primer",
+        "System_Security_Management_MCSE586",
+        "Tafsir-Ibn-Kathir",
+        "test",
+        "Testing_SoftwareQualityAssuranceMCSE652",
+        "UbuLinDexConMan",
+        "Utsho",
+        "VLOG-BLOG",
+        "Web-Data-Text-Link-Extractor-Scripts-Broad-And-Searchable",
+        "Webassembly",
+        "WebComputingAndMining",
+        "Windows-File-Explorer-Manager-Startup-Windows-Automation"
+      ],
+      "linkedRepoDetails": [
+        {
+          "name": ".NET-Backend-Developer-Roadmap",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\.NET-Backend-Developer-Roadmap",
+          "role": "peer"
+        },
+        {
+          "name": "AbsolutePath__RelativePath",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\AbsolutePath__RelativePath",
+          "role": "peer"
+        },
+        {
+          "name": "adorshogeenbangla_dotNET_web_app",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\adorshogeenbangla_dotNET_web_app",
+          "role": "peer"
+        },
+        {
+          "name": "AI_Tools_Plan_Master_Index_Lib",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\AI_Tools_Plan_Master_Index_Lib",
+          "role": "hub"
+        },
+        {
+          "name": "Al-Bidaya-wan-Nihaya",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Al-Bidaya-wan-Nihaya",
+          "role": "peer"
+        },
+        {
+          "name": "Algorithoms_and_Data_Structures",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Algorithoms_and_Data_Structures",
+          "role": "peer"
+        },
+        {
+          "name": "Android",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Android",
+          "role": "peer"
+        },
+        {
+          "name": "androidHome",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\androidHome",
+          "role": "peer"
+        },
+        {
+          "name": "ArchLinux",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\ArchLinux",
+          "role": "peer"
+        },
+        {
+          "name": "AspNetCore-Developer-Roadmap",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\AspNetCore-Developer-Roadmap",
+          "role": "peer"
+        },
+        {
+          "name": "AssemblyCode_asm_Programs",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\AssemblyCode_asm_Programs",
+          "role": "peer"
+        },
+        {
+          "name": "Asset-Management-ERP-MBA",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Asset-Management-ERP-MBA",
+          "role": "peer"
+        },
+        {
+          "name": "books-Python-C-CPP-HTML-CSS-Js-PHP-Rust-AssemblyLanguage-",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\books-Python-C-CPP-HTML-CSS-Js-PHP-Rust-AssemblyLanguage-",
+          "role": "peer"
+        },
+        {
+          "name": "Browser_Add_ons_Extensions_PlugIns",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Browser_Add_ons_Extensions_PlugIns",
+          "role": "peer"
+        },
+        {
+          "name": "C-Learning_ignored_and_discontinued",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\C-Learning_ignored_and_discontinued",
+          "role": "peer"
+        },
+        {
+          "name": "C_Programming",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\C_Programming",
+          "role": "peer"
+        },
+        {
+          "name": "caveman",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\caveman",
+          "role": "peer"
+        },
+        {
+          "name": "cavemem",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\cavemem",
+          "role": "peer"
+        },
+        {
+          "name": "CPlusPlusCPP_Programming",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\CPlusPlusCPP_Programming",
+          "role": "peer"
+        },
+        {
+          "name": "CPP-Programming_AbdulBari",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\CPP-Programming_AbdulBari",
+          "role": "peer"
+        },
+        {
+          "name": "CPP_AbdulBari",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\CPP_AbdulBari",
+          "role": "peer"
+        },
+        {
+          "name": "CppBooks",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\CppBooks",
+          "role": "peer"
+        },
+        {
+          "name": "CppCoreGuidelines",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\CppCoreGuidelines",
+          "role": "peer"
+        },
+        {
+          "name": "CS50GitPractice",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\CS50GitPractice",
+          "role": "peer"
+        },
+        {
+          "name": "CS50W-Project0-Google-Search",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\CS50W-Project0-Google-Search",
+          "role": "peer"
+        },
+        {
+          "name": "CyberSecurity_PenTesting_BugBounty",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\CyberSecurity_PenTesting_BugBounty",
+          "role": "peer"
+        },
+        {
+          "name": "Dart-Flutter",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Dart-Flutter",
+          "role": "peer"
+        },
+        {
+          "name": "Data_Mining_MCSE_642",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Data_Mining_MCSE_642",
+          "role": "peer"
+        },
+        {
+          "name": "DBMS_Database_Management_System_CSI_223_MCSE",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\DBMS_Database_Management_System_CSI_223_MCSE",
+          "role": "peer"
+        },
+        {
+          "name": "digitalbd_org",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\digitalbd_org",
+          "role": "peer"
+        },
+        {
+          "name": "Docker---Kubernetes",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Docker---Kubernetes",
+          "role": "peer"
+        },
+        {
+          "name": "DomainsAndWebSiteHosting",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\DomainsAndWebSiteHosting",
+          "role": "peer"
+        },
+        {
+          "name": "DSA_C_and_CPP_Data_Structures_and_Algorithms",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\DSA_C_and_CPP_Data_Structures_and_Algorithms",
+          "role": "peer"
+        },
+        {
+          "name": "Electronic-Cheat-Sheet-and-Schematics-MegaCollection",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Electronic-Cheat-Sheet-and-Schematics-MegaCollection",
+          "role": "peer"
+        },
+        {
+          "name": "Evolutionary_Algorithm_MCSE662",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Evolutionary_Algorithm_MCSE662",
+          "role": "peer"
+        },
+        {
+          "name": "General-Study-Skills",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\General-Study-Skills",
+          "role": "peer"
+        },
+        {
+          "name": "GitAutoRepoFleet",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\GitAutoRepoFleet",
+          "role": "spoke"
+        },
+        {
+          "name": "Hands-On-WebAssembly-for-C-Programmers",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Hands-On-WebAssembly-for-C-Programmers",
+          "role": "peer"
+        },
+        {
+          "name": "Hard__Junction__Soft_Symbolic_SymLinks",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Hard__Junction__Soft_Symbolic_SymLinks",
+          "role": "peer"
+        },
+        {
+          "name": "Help-Files",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Help-Files",
+          "role": "peer"
+        },
+        {
+          "name": "HTML-and-html.txt-files",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\HTML-and-html.txt-files",
+          "role": "peer"
+        },
+        {
+          "name": "JavaScript",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\JavaScript",
+          "role": "peer"
+        },
+        {
+          "name": "KLEHPT",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\KLEHPT",
+          "role": "peer"
+        },
+        {
+          "name": "Library_Management_Dot_Net",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Library_Management_Dot_Net",
+          "role": "peer"
+        },
+        {
+          "name": "Markup_Languages",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Markup_Languages",
+          "role": "peer"
+        },
+        {
+          "name": "mempalace",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\mempalace",
+          "role": "peer"
+        },
+        {
+          "name": "MemPalace-dev",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\MemPalace-dev",
+          "role": "peer"
+        },
+        {
+          "name": "modern-js-cheatsheet",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\modern-js-cheatsheet",
+          "role": "peer"
+        },
+        {
+          "name": "MongoDB",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\MongoDB",
+          "role": "peer"
+        },
+        {
+          "name": "MSc_CSE",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\MSc_CSE",
+          "role": "peer"
+        },
+        {
+          "name": "mSc_CSEOLD_FIlesOf",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\mSc_CSEOLD_FIlesOf",
+          "role": "peer"
+        },
+        {
+          "name": "My-md-website-cv",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\My-md-website-cv",
+          "role": "peer"
+        },
+        {
+          "name": "MySQL_RDBMS",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\MySQL_RDBMS",
+          "role": "peer"
+        },
+        {
+          "name": "Networking_IT_Comm_IE_IP",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Networking_IT_Comm_IE_IP",
+          "role": "peer"
+        },
+        {
+          "name": "Obsidian_Vault",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Obsidian_Vault",
+          "role": "peer"
+        },
+        {
+          "name": "Office-Works",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Office-Works",
+          "role": "peer"
+        },
+        {
+          "name": "Open_Source_Projects_Contributions",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Open_Source_Projects_Contributions",
+          "role": "peer"
+        },
+        {
+          "name": "Operating_System_CSI_313",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Operating_System_CSI_313",
+          "role": "peer"
+        },
+        {
+          "name": "palaces-mempalace-mydev",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\palaces-mempalace-mydev",
+          "role": "peer"
+        },
+        {
+          "name": "Palaces-mempalace-official",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Palaces-mempalace-official",
+          "role": "peer"
+        },
+        {
+          "name": "PLC-VFD-SCADA",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\PLC-VFD-SCADA",
+          "role": "peer"
+        },
+        {
+          "name": "Project-Material",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Project-Material",
+          "role": "peer"
+        },
+        {
+          "name": "Python_django_MySQL",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Python_django_MySQL",
+          "role": "peer"
+        },
+        {
+          "name": "Python_Programming",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Python_Programming",
+          "role": "peer"
+        },
+        {
+          "name": "Sadik-Education-Materials",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Sadik-Education-Materials",
+          "role": "peer"
+        },
+        {
+          "name": "Scratch-online-programming-and-game-making",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Scratch-online-programming-and-game-making",
+          "role": "peer"
+        },
+        {
+          "name": "Shared_businet",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Shared_businet",
+          "role": "peer"
+        },
+        {
+          "name": "Shared_public_html",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Shared_public_html",
+          "role": "peer"
+        },
+        {
+          "name": "Shared_repo",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Shared_repo",
+          "role": "peer"
+        },
+        {
+          "name": "Shehrine_Education_Material",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Shehrine_Education_Material",
+          "role": "peer"
+        },
+        {
+          "name": "shyed2001",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\shyed2001",
+          "role": "peer"
+        },
+        {
+          "name": "shyed2001.github.io",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\shyed2001.github.io",
+          "role": "peer"
+        },
+        {
+          "name": "Sirat_un_Nabi_by_Ibn_Hisham",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Sirat_un_Nabi_by_Ibn_Hisham",
+          "role": "peer"
+        },
+        {
+          "name": "SQLite",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\SQLite",
+          "role": "peer"
+        },
+        {
+          "name": "StructuredProgrammingCSI_121",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\StructuredProgrammingCSI_121",
+          "role": "peer"
+        },
+        {
+          "name": "system-design-primer",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\system-design-primer",
+          "role": "peer"
+        },
+        {
+          "name": "System_Security_Management_MCSE586",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\System_Security_Management_MCSE586",
+          "role": "peer"
+        },
+        {
+          "name": "Tafsir-Ibn-Kathir",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Tafsir-Ibn-Kathir",
+          "role": "peer"
+        },
+        {
+          "name": "test",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\test",
+          "role": "peer"
+        },
+        {
+          "name": "Testing_SoftwareQualityAssuranceMCSE652",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Testing_SoftwareQualityAssuranceMCSE652",
+          "role": "peer"
+        },
+        {
+          "name": "UbuLinDexConMan",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\UbuLinDexConMan",
+          "role": "peer"
+        },
+        {
+          "name": "Utsho",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Utsho",
+          "role": "peer"
+        },
+        {
+          "name": "VLOG-BLOG",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\VLOG-BLOG",
+          "role": "peer"
+        },
+        {
+          "name": "Web-Data-Text-Link-Extractor-Scripts-Broad-And-Searchable",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Web-Data-Text-Link-Extractor-Scripts-Broad-And-Searchable",
+          "role": "peer"
+        },
+        {
+          "name": "Webassembly",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Webassembly",
+          "role": "peer"
+        },
+        {
+          "name": "WebComputingAndMining",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\WebComputingAndMining",
+          "role": "peer"
+        },
+        {
+          "name": "Windows-File-Explorer-Manager-Startup-Windows-Automation",
+          "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\Windows-File-Explorer-Manager-Startup-Windows-Automation",
+          "role": "peer"
+        }
+      ]
+    }
+  },
+  "automationRepo": {
+    "name": "GitAutoRepoFleet",
+    "path": "F:\\GitHubDesktop\\GitHubCloneFiles\\GitAutoRepoFleet",
+    "role": "orchestrator"
+  },
+  "aiFilePolicy": {
+    "globalManagedInHub": true,
+    "repoSpecificAllowed": true,
+    "commonBaselineFiles": [
+      "AGENTS.md",
+      "CLAUDE.md",
+      "GEMINI.md",
+      ".cursorrules",
+      ".windsurfrules",
+      ".clinerules",
+      "ANTIGRAVITY.md"
+    ],
+    "syncPreference": [
+      "pointer-file",
+      "symlink-optional",
+      "junction-optional-windows-only"
+    ]
+  },
+  "rollout": {
+    "ready": true,
+    "requiredFiles": [
+      "AI-INDEX.md",
+      "AI-RELATIONS.json"
+    ],
+    "verification": {
+      "relatedReposSource": "relations.fleetTopology.linkedRepos",
+      "relatedRepoDetailSource": "relations.fleetTopology.linkedRepoDetails",
+      "canonicalHubSource": "rootPolicy.canonicalRepo",
+      "regenerateOnFleetChange": true
+    }
+  }
+}
